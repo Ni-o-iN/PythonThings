@@ -35,5 +35,3 @@ print(c)
 
 add = lambda a,b: a + b #lambda
 print(add(3,5))
-
-
