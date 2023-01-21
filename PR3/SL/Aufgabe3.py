@@ -21,7 +21,7 @@
 #Fehler kann nicht durch 0 teilen
 
 #z="2.0"
-#11/float(z)
+#11/int(z)
 #print(z, type(z))
 #Fehler 2.0 ist kein int sondern float
 
