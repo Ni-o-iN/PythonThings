@@ -1,5 +1,9 @@
+import threading
+
 import pygame
 import sys
+import random
+import time
 
 pygame.init()
 hintergrund = pygame.image.load("Grafiken/fluss.jpeg")
@@ -18,8 +22,24 @@ def zeichnen(list):
         screen.blit(figur_rechts, (x,y))
     pygame.display.update()
 
+gesetzt = False
+
+def blockCooldown():
+    global gesetzt
+    if gesetzt == True and int(time.time()) % 5:
+        gesetzt = False
+
+def block():
+    stelle = random.uniform(0,500)
+    breite = random.uniform(20,50)
+    höhe = 10
+    if gesetzt:
+        pygame.draw.rect(screen, (91,58,41), (stelle,0,breite,höhe))
+        pygame.display.update()
+
+
 x = 300
-y = 600
+y = 650
 breite = 100
 höhe = 100
 geschwindigkeit = 3
@@ -49,5 +69,7 @@ while go:
         x -= geschwindigkeit
         richtung = [1,0]
 
+    block()
+    blockCooldown()
     zeichnen(richtung)
     clock.tick(60)
