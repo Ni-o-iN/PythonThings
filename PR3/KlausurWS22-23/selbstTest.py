@@ -2,7 +2,7 @@
 #Was ist die Ausgabe
 d = [1,2,3,4,5,6]
 print(d[1:3])
-#Antwort
+#Antwort:
 
 '''
 Aufgabe 22
@@ -66,7 +66,7 @@ Antwort:
 
 '''
 Aufgae 30
-NLTKist eine Python-Bibliothek, dioe vorrangig zum Auswerten und Bearbeiten 
+NLTK ist eine Python-Bibliothek, die vorrangig zum Auswerten und Bearbeiten 
 tabellarischer Daten gedacht ist. Sie findet hauptsächlich ihren Einsatz
 im Preprocessing bei Data Mining
 Wahr oder Falsch
@@ -98,6 +98,7 @@ k.print()
 #Aufgabe 33
 # Anzahl der Häufigkeit des Wertes 5
 l = [5,50,55,555,5555]
+
 
 
 #Aufgabe 34
@@ -133,7 +134,7 @@ from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importi
 '''
 
 #Aufgabe 37
-#Datei mit Temperaturen einlesen und den max.,  min. und den durchschnittlichen Wert ausgeben
+#Datei mit Temperaturen einlesen und den max., min. und den durchschnittlichen Wert ausgeben
 
 
 #Aufgabe 38
@@ -154,7 +155,7 @@ print(x)
 funktion welches das Wort Donaudampfschiffahrtgesellschaftsstewardess 
 in einzelne buchstaben splittet und in eine Liste macht
 welche länge hat die Liste ?
-doppelte Buchstaben entfernen
+doppelte Buchstaben entfernen wie lange jetzt
 '''
 
 
@@ -165,6 +166,7 @@ Code schreiben der die listen nach dem zweiten element sortiert
 '''
 
 
+
 #Aufgabe 41
 '''
 Es soll eine Textdatei eingelesen werden und die Wörter hello und Hello 
@@ -172,6 +174,7 @@ sollen gezählt werden. Die Summe soll ausgegeben werden und in einer Datei
 gespeichert werden, in einer Zeile soll das Wort nur einmal gezählt werden 
 auch wenn es mehrmals vorkommt
 '''
+
 
 
 '''

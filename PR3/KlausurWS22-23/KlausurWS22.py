@@ -2,6 +2,7 @@
 #Was ist die Ausgabe
 d = [1,2,3,4,5,6]
 print(d[1:3])
+#Antwort: [2,3]
 
 '''
 Aufgabe 22
@@ -65,7 +66,7 @@ Antwort: Falsch
 
 '''
 Aufgae 30
-NLTKist eine Python-Bibliothek, dioe vorrangig zum Auswerten und Bearbeiten 
+NLTK ist eine Python-Bibliothek, die vorrangig zum Auswerten und Bearbeiten 
 tabellarischer Daten gedacht ist. Sie findet hauptsächlich ihren Einsatz
 im Preprocessing bei Data Mining
 Wahr oder Falsch
@@ -75,6 +76,7 @@ Antwort: Falsch
 #Aufgabe 31
 #Was ist die Ausgabe
 print([(b,c) for b in range(3) for c in range(b)])
+#Antwort: [(1,0), (2,0), (2,1)]
 
 #Aufgabe 32
 #Was ist die Ausgabe
@@ -91,6 +93,7 @@ class Z(X):
         self.y = 400
 k = Z()
 k.print()
+#Antwort: 100, 400
 
 #Aufgabe 33
 # Anzahl der Häufigkeit des Wertes 5
@@ -207,6 +210,7 @@ with open(dateiname, "r") as datei:
             anzahl += 1
 with open("ergebnis.txt", "w") as ergebnisdatei:
     ergebnisdatei.write(str(anzahl))
+print(anzahl)
 
 '''
 Aufgabe 42
