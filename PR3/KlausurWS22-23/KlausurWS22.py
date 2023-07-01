@@ -99,6 +99,14 @@ k.print()
 # Anzahl der Häufigkeit des Wertes 5
 l = [5,50,55,555,5555]
 print(l.count(5))
+#wenn die Ziffer 5 gezählt werden soll
+lstring = ''.join(map(str, l))
+print(lstring)
+counter = 0
+for i in range(len(lstring)):
+    if lstring[i] == "5":
+        counter += 1
+print(counter)
 
 #Aufgabe 34
 #Funktion division_mit_rest(a,b) die zwei Werte ungleich 0 aufruft
@@ -107,8 +115,7 @@ def division_mit_rest(a,b):
     if a == 0 or b == 0:
         return 0
     else:
-        mein_tupel = (a//b,a%b)
-        return mein_tupel
+        return (a//b,a%b)
 print(division_mit_rest(5,2))
 
 #Aufgabe 35
@@ -128,6 +135,8 @@ class D(C, B):
     def what_am_i(self):
         super().what_am_i()
         print("D")
+x = D()
+x.what_am_i()
 #Antwort: D C B A Object
 
 #Aufgabe 36
@@ -140,16 +149,23 @@ from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importi
 
 #Aufgabe 37
 #Datei mit Temperaturen einlesen und den max.,  min. und den durchschnittlichen Wert ausgeben
-datei = open("temp.txt", "r")
-zeilen = datei.readlines()
-zahlen = [int(zeile.strip())for zeile in zeilen]
-datei.close()
+with open("temp.txt", "r") as datei:
+    zahlen = [int(line.strip())for line in datei]
 maximum = max(zahlen)
 minimum = min(zahlen)
 durchschnitt = sum(zahlen) / len(zahlen)
 print(maximum)
 print(minimum)
 print(durchschnitt)
+"""
+wenn die zahlen in einer Reihe stehen dann
+with open("temp.txt", "r") as datei:
+    zahlen = [int(num) for num in datei.read().split(",")]
+ma = max(zahlen)
+mi = min(zahlen)
+du = sum(zahlen)/len(zahlen)
+print(ma, mi, du)
+"""
 
 #Aufgabe 38
 '''

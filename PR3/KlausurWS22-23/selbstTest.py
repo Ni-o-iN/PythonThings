@@ -9,14 +9,14 @@ Aufgabe 22
 Zur Auflösung der Vererbungshierarchie wird in der Pythonversion 2.3 bzw. 3.x
 der C3-Liniearisierungsalgorithmus verwendet
 Wahr oder Falsch
-Antwort: 
+Antwort:
 '''
 
 '''
 Aufgabe 23
 Python besitzt eine dynamische Typisierung
 Wahr oder Falsch
-Antowrt: 
+Antowrt:
 '''
 
 '''
@@ -123,7 +123,10 @@ class D(C, B):
     def what_am_i(self):
         super().what_am_i()
         print("D")
+x = D()
+x.what_am_i()
 #Antwort:
+
 
 #Aufgabe 36
 '''
@@ -137,6 +140,7 @@ from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importi
 #Datei mit Temperaturen einlesen und den max., min. und den durchschnittlichen Wert ausgeben
 
 
+
 #Aufgabe 38
 '''
 was ist die Ausgabe wenn die Dictionarys 
@@ -147,7 +151,7 @@ del x['d']
 z = x.setdefault('g', 7)
 x.update(y)
 print(x)
-
+Antwort: 
 '''
 
 #Aufgabe 39
@@ -157,6 +161,7 @@ in einzelne buchstaben splittet und in eine Liste macht
 welche länge hat die Liste ?
 doppelte Buchstaben entfernen wie lange jetzt
 '''
+
 
 
 #Aufgabe 40
