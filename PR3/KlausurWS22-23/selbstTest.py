@@ -9,14 +9,14 @@ Aufgabe 22
 Zur Auflösung der Vererbungshierarchie wird in der Pythonversion 2.3 bzw. 3.x
 der C3-Liniearisierungsalgorithmus verwendet
 Wahr oder Falsch
-Antwort:
+Antwort: 
 '''
 
 '''
 Aufgabe 23
 Python besitzt eine dynamische Typisierung
 Wahr oder Falsch
-Antowrt:
+Antowrt: 
 '''
 
 '''
@@ -76,7 +76,7 @@ Antwort:
 #Aufgabe 31
 #Was ist die Ausgabe
 print([(b,c) for b in range(3) for c in range(b)])
-#Antwort:
+#Antwort: [(1,0), (2,0), (2,1)]
 
 #Aufgabe 32
 #Was ist die Ausgabe
@@ -97,7 +97,6 @@ k.print()
 
 #Aufgabe 33
 # Anzahl der Häufigkeit des Wertes 5
-l = [5,50,55,555,5555]
 
 
 
@@ -140,7 +139,6 @@ from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importi
 #Datei mit Temperaturen einlesen und den max., min. und den durchschnittlichen Wert ausgeben
 
 
-
 #Aufgabe 38
 '''
 was ist die Ausgabe wenn die Dictionarys 
@@ -151,7 +149,7 @@ del x['d']
 z = x.setdefault('g', 7)
 x.update(y)
 print(x)
-Antwort: 
+Antwort:
 '''
 
 #Aufgabe 39

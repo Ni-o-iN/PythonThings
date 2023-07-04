@@ -149,6 +149,7 @@ from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importi
 
 #Aufgabe 37
 #Datei mit Temperaturen einlesen und den max.,  min. und den durchschnittlichen Wert ausgeben
+"""wenn die Zahlen in verscheidenen Reihen stehen
 with open("temp.txt", "r") as datei:
     zahlen = [int(line.strip())for line in datei]
 maximum = max(zahlen)
@@ -158,14 +159,13 @@ print(maximum)
 print(minimum)
 print(durchschnitt)
 """
-wenn die zahlen in einer Reihe stehen dann
 with open("temp.txt", "r") as datei:
     zahlen = [int(num) for num in datei.read().split(",")]
 ma = max(zahlen)
 mi = min(zahlen)
 du = sum(zahlen)/len(zahlen)
 print(ma, mi, du)
-"""
+
 
 #Aufgabe 38
 '''
