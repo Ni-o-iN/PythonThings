@@ -16,7 +16,7 @@ Antwort:
 Aufgabe 23
 Python besitzt eine dynamische Typisierung
 Wahr oder Falsch
-Antowrt: 
+Antwort: 
 '''
 
 '''
@@ -76,7 +76,7 @@ Antwort:
 #Aufgabe 31
 #Was ist die Ausgabe
 print([(b,c) for b in range(3) for c in range(b)])
-#Antwort: [(1,0), (2,0), (2,1)]
+#Antwort:
 
 #Aufgabe 32
 #Was ist die Ausgabe
@@ -97,12 +97,14 @@ k.print()
 
 #Aufgabe 33
 # Anzahl der Häufigkeit des Wertes 5
+l = [5,50,55,555,5555]
 
 
 
 #Aufgabe 34
 #Funktion division_mit_rest(a,b) die zwei Werte ungleich 0 aufruft
 #Tupel als Rückgabe soll ganzzahlige divisions zahl und rest beinhalten
+
 
 
 #Aufgabe 35
@@ -130,13 +132,14 @@ x.what_am_i()
 #Aufgabe 36
 '''
 Unterschied zwischen
-import math = ganze Bibliothek wird mportiert und man kann sie mit math. aufrufen
+import math = ganze Bibliothek wird importiert und man kann sie mit math. aufrufen
 import math as m = das gleiche wie oben bloß kann man nun die Bibliothek mit m. aufrufen
 from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importiert und dieser kann ohne math. davor benutzt werden
 '''
 
 #Aufgabe 37
 #Datei mit Temperaturen einlesen und den max., min. und den durchschnittlichen Wert ausgeben
+
 
 
 #Aufgabe 38
@@ -149,7 +152,7 @@ del x['d']
 z = x.setdefault('g', 7)
 x.update(y)
 print(x)
-Antwort:
+Antwort: {'a':6, 'b':2, 'c':3, 'g':7, 'e':5, 'f':6}
 '''
 
 #Aufgabe 39
@@ -159,6 +162,7 @@ in einzelne buchstaben splittet und in eine Liste macht
 welche länge hat die Liste ?
 doppelte Buchstaben entfernen wie lange jetzt
 '''
+wort = "Donaudampfschiffahrtgesellschaftsstewardess"
 
 
 
@@ -167,6 +171,7 @@ doppelte Buchstaben entfernen wie lange jetzt
 Gegeben ist die Liste [[1,2,3],[2,1,3],[4,0,1]]
 Code schreiben der die listen nach dem zweiten element sortiert
 '''
+my_zahlen = [[1,2,3],[2,1,3],[4,0,1]]
 
 
 
@@ -190,6 +195,7 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 data1 = pd.DataFrame({'Name' : ["A", "B", "C", "D", "E"], 'Value' : [3,12,5,18,45]})
+
 
 
 

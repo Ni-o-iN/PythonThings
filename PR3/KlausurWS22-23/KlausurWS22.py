@@ -142,7 +142,7 @@ x.what_am_i()
 #Aufgabe 36
 '''
 Unterschied zwischen
-import math = ganze Bibliothek wird mportiert und man kann sie mit math. aufrufen
+import math = ganze Bibliothek wird importiert und man kann sie mit math. aufrufen
 import math as m = das gleiche wie oben bloß kann man nun die Bibliothek mit m. aufrufen
 from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importiert und dieser kann ohne math. davor benutzt werden
 '''
