@@ -2,21 +2,21 @@
 #Was ist die Ausgabe
 d = [1,2,3,4,5,6]
 print(d[1:3])
-#Antwort:
+#Antwort:[2,3]
 
 '''
 Aufgabe 22
 Zur Auflösung der Vererbungshierarchie wird in der Pythonversion 2.3 bzw. 3.x
 der C3-Liniearisierungsalgorithmus verwendet
 Wahr oder Falsch
-Antwort: 
+Antwort: Wahr
 '''
 
 '''
 Aufgabe 23
 Python besitzt eine dynamische Typisierung
 Wahr oder Falsch
-Antwort: 
+Antwort: Wahr
 '''
 
 '''
@@ -24,7 +24,7 @@ Aufgabe 24
 Python ist keine multiparadigmatische Programmiersprache, denn man kann nur 
 objektorientiert programmieren
 Wahr oder Falsch
-Antwort: 
+Antwort: Falsch
 '''
 
 '''
@@ -32,28 +32,28 @@ Aufgabe 25
 Der Befehl with open('a.txt', 'r'), stellt sicher, dass die Datei automatisch 
 wieder korrekt geschlossen wird
 Wahr oder Falsch 
-Antwort: 
+Antwort: Wahr
 '''
 
 '''
 Aufgabe 26
 In Python sind Listen veränderlich, wohingegen Tuple nicht veränderlich sind
 Wahr oder Falsch
-Antwort: 
+Antwort: Wahr
 '''
 
 '''
 Aufgabe 27
 Pickeling ist besonders schnell, speichereffizient und sicher
 Wahr oder Falsch
-Antwort: 
+Antwort: Falsch
 '''
 
 '''
 Aufgabe 28
 Die Ausgabe des Ausdrucks print(r"\the"=="\the") liefert das Ergebnis false
 Wahr oder Falsch
-Antwort: 
+Antwort: Wahr
 '''
 
 '''
@@ -61,7 +61,7 @@ Aufgabe 29
 TextBlob ist eine Bibliothek für die Verarbeitung von Datenbanken und ermöglicht
 das Absenden einer SQL-Query
 Wahr oder Falsch
-Antwort: 
+Antwort: Falsch
 '''
 
 '''
@@ -70,13 +70,13 @@ NLTK ist eine Python-Bibliothek, die vorrangig zum Auswerten und Bearbeiten
 tabellarischer Daten gedacht ist. Sie findet hauptsächlich ihren Einsatz
 im Preprocessing bei Data Mining
 Wahr oder Falsch
-Antwort: 
+Antwort: Falsch
 '''
 
 #Aufgabe 31
 #Was ist die Ausgabe
 print([(b,c) for b in range(3) for c in range(b)])
-#Antwort:
+#Antwort: [(1,0),(2,0),(2,1)]
 
 #Aufgabe 32
 #Was ist die Ausgabe
@@ -93,18 +93,29 @@ class Z(X):
         self.y = 400
 k = Z()
 k.print()
-#Antwort:
+#Antwort: 100, 400
 
 #Aufgabe 33
 # Anzahl der Häufigkeit des Wertes 5
 l = [5,50,55,555,5555]
-
+print(l.count(5))
+lstring = ''.join(map(str, l))
+counter = 0
+for i in lstring:
+    if i == "5":
+        counter += 1
+print(counter)
 
 
 #Aufgabe 34
 #Funktion division_mit_rest(a,b) die zwei Werte ungleich 0 aufruft
 #Tupel als Rückgabe soll ganzzahlige divisions zahl und rest beinhalten
-
+def division_mit_rest(a,b):
+    if a == 0 or b == 0:
+        return 0
+    else:
+        return (a//b, a%b)
+print(division_mit_rest(5,2))
 
 
 #Aufgabe 35
@@ -126,7 +137,7 @@ class D(C, B):
         print("D")
 x = D()
 x.what_am_i()
-#Antwort:
+#Antwort: D C B A Object
 
 
 #Aufgabe 36
@@ -139,7 +150,12 @@ from math import sqrt = hier wird nur ein bestimmter Teil der Bibliothek importi
 
 #Aufgabe 37
 #Datei mit Temperaturen einlesen und den max., min. und den durchschnittlichen Wert ausgeben
-
+with open('temp.txt', 'r') as datei:
+    zahlen = [int(num) for num in datei.read().split(',')]
+mi = min(zahlen)
+ma = max(zahlen)
+du = sum(zahlen)/len(zahlen)
+print(mi, ma, du)
 
 
 #Aufgabe 38
@@ -163,7 +179,12 @@ welche länge hat die Liste ?
 doppelte Buchstaben entfernen wie lange jetzt
 '''
 wort = "Donaudampfschiffahrtgesellschaftsstewardess"
-
+def split(wort):
+    my_list = list(wort)
+    print(len(my_list))
+    un = list(set(wort.lower))
+    print(len(un))
+split(wort)
 
 
 #Aufgabe 40
@@ -172,7 +193,8 @@ Gegeben ist die Liste [[1,2,3],[2,1,3],[4,0,1]]
 Code schreiben der die listen nach dem zweiten element sortiert
 '''
 my_zahlen = [[1,2,3],[2,1,3],[4,0,1]]
-
+sor = sorted(my_zahlen, key=lambda x:x[1])
+print(sor)
 
 
 #Aufgabe 41
