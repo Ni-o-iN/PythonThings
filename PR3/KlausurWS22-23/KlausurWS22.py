@@ -16,7 +16,7 @@ Antwort: Wahr
 Aufgabe 23
 Python besitzt eine dynamische Typisierung
 Wahr oder Falsch
-Antowrt: Wahr
+Antwort: Wahr
 '''
 
 '''
